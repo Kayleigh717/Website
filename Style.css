@@ -1,0 +1,45 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(Assets/background.jpg);
+    background-position: center;
+    background-size: 2000px;
+    color: #e2e9ff;
+    margin: 5%;
+    line-height: 25px;
+    font-size: 110%;
+}
+h1 {
+    color: #8f0043;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+h2 {
+    color: #8f0043;
+    font-weight: 600;
+}
+h3 {
+    font-weight: 800;
+}
+p {
+    font-weight: 500;
+}
+a:link {
+    color: #e2e9ff;
+}
+a:visited{
+    color: #e2e9ff;
+}
+a:hover {
+    color: #00a2ff;
+}
+.box {
+    background-color: rgba(10, 10, 20, 0.918);
+    background-blend-mode: multiply;
+    padding: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+}
+hr {
+    margin: 25px 0px 25px 0px
+}
