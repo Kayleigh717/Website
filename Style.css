@@ -1,9 +1,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-image: url(Assets/background.jpg);
-    background-position: ;
     background-attachment: fixed;
     background-size: 2550px;
+    /*background-image: url(/Assets/pattern.jpg);
+    background-position: center;
+    background-attachment: fixed;*/
     color: #e2e9ff;
     margin: 2% 31% 2% 31%;
     line-height: 25px;
