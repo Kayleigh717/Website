@@ -1,34 +1,33 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(Assets/background.jpg);
-    background-attachment: fixed;
-    background-size: 2550px;
-    /*background-image: url(/Assets/pattern.jpg);
+    background-image: url(/Assets/pattern.jpg);
     background-position: center;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
     color: #e2e9ff;
-    margin: 2% 31% 2% 31%;
-    line-height: 25px;
-    font-size: 100%;
+    line-height: 1.5em;
+    font-size: .9em;
 }
 .box {
     background-color: rgba(10, 10, 20, 0.918);
-    backdrop-filter: blur(10px);
-    padding: 5%;
+    backdrop-filter: blur(.3em);
+    margin: 1em 1em 1em 1em;
+    padding: 1em;
     border-style: solid;
-    border-width: 1px;
-    border-radius: 30px;
+    border-width: .1em;
+    border-radius: 3em;
 }
 h1 {
     color: #8f0043;
     text-transform: capitalize;
-    font-weight: 600;
 }
 h2 {
     color: #8f0043;
-}(10)
+}
 a:link {
     color: #e2e9ff;
+}
+a:active {
+    color:#e2e9ff
 }
 a:visited{
     color: #e2e9ff;
@@ -37,9 +36,5 @@ a:hover {
     color: #00a2ff;
 }
 hr {
-    margin: 5% 0% 5% 0%;
-    border-top: 1px;
-}
-.center {
-    text-align: center;
+    margin: 1.5em 0em 1.5em 0em
 }
