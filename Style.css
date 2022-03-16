@@ -1,12 +1,21 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     background-image: url(Assets/background.jpg);
-    background-position: center;
-    background-size: 2000px;
+    background-position: ;
+    background-attachment: fixed;
+    background-size: 2550px;
     color: #e2e9ff;
-    margin: 5%;
+    margin: 2% 31% 2% 31%;
     line-height: 25px;
-    font-size: 110%;
+    font-size: 100%;
+}
+.box {
+    background-color: rgba(10, 10, 20, 0.918);
+    backdrop-filter: blur(10px);
+    padding: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
 }
 h1 {
     color: #8f0043;
@@ -15,13 +24,6 @@ h1 {
 }
 h2 {
     color: #8f0043;
-    font-weight: 600;
-}
-h3 {
-    font-weight: 800;
-}
-p {
-    font-weight: 500;
 }
 a:link {
     color: #e2e9ff;
@@ -32,14 +34,10 @@ a:visited{
 a:hover {
     color: #00a2ff;
 }
-.box {
-    background-color: rgba(10, 10, 20, 0.918);
-    background-blend-mode: multiply;
-    padding: 5%;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 100px;
-}
 hr {
-    margin: 25px 0px 25px 0px
+    margin: 5% 0% 5% 0%;
+    border-top: 1px;
+}
+.center {
+    text-align: center;
 }
