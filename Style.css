@@ -5,16 +5,23 @@ body {
     background-attachment: fixed;
     color: #e2e9ff;
     line-height: 1.5em;
-    font-size: .9em;
+    font-size: 1em;
 }
 .box {
     background-color: rgba(10, 10, 20, 0.918);
     backdrop-filter: blur(.3em);
-    margin: 1em 1em 1em 1em;
-    padding: 1em;
+    margin: 10em 20em 2em 20em;
+    padding: 3em;
     border-style: solid;
     border-width: .1em;
     border-radius: 3em;
+}
+
+#CommissionTypes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 h1 {
     color: #8f0043;
@@ -27,7 +34,7 @@ a:link {
     color: #e2e9ff;
 }
 a:active {
-    color:#e2e9ff
+    color:#e2e9ff;
 }
 a:visited{
     color: #e2e9ff;
@@ -35,6 +42,33 @@ a:visited{
 a:hover {
     color: #00a2ff;
 }
-hr {
-    margin: 1.5em 0em 1.5em 0em
+img:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+img {
+    border-radius: 1em;
+}
+@media only screen and (max-width: 1366px) {
+    .box {
+        margin: 5em 10em 5em 10em;
+        padding: 3em;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .box {
+        margin: 1em 1em 1em 1em;
+        padding: 2em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .box {
+        margin: .5em .5em .5em .5em;
+        padding: 1em;
+        font-size: .8em;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        }
 }
