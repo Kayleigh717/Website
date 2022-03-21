@@ -20,14 +20,15 @@ body {
 .box {
     background-color: rgba(10, 10, 20, 0.918);
     backdrop-filter: blur(.3em);
-    margin: 10em 20em 2em 20em;
+    margin: 10em 20em 1em 20em;
     padding: 3em;
     border-style: solid;
     border-width: .1em;
     border-radius: 3em;
 }
 
-#CommissionTypes {
+
+#CommissionTypes  {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
