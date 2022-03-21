@@ -7,7 +7,7 @@ body {
     line-height: 1.5em;
     font-size: 1em;
     
-    animation: fadein 1s ease forwards; 
+    animation: fadein 0.5s ease forwards; 
 }
 @keyframes fadein{
         from{
