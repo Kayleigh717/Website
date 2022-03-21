@@ -7,17 +7,16 @@ body {
     line-height: 1.5em;
     font-size: 1em;
     
-    animation: fadein 1s ease forwards;
-    
-    @keyframes fadein{
+    animation: fadein 1s ease forwards; 
+}
+@keyframes fadein{
         from{
             opacity: 0;
         }
         to{
             opacity: 1;
         }
-    }   
-}
+ }  
 .box {
     background-color: rgba(10, 10, 20, 0.918);
     backdrop-filter: blur(.3em);
