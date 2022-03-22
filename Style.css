@@ -42,7 +42,7 @@ h1 {
 h2 {
     color: #8f0043;
 }
-a {
+#nav {
     background-color: rgba(10, 10, 20, 0);
     color:#e2e9ff;
     padding: 10px 10px;
@@ -55,24 +55,30 @@ a {
     border-style: outset;
     border-width: 2px;
   }
-/*:link, a:visited a:active {
 
-  }*/
+a:visited {
+    color:#e2e9ff;
+  }
+a:active {
+    color:#e2e9ff;
+}
 a:hover {
     transform: scale(1.1);
+    color: #00ccff;
 }
-
-/*img:hover {
-    transition: transform .2s;
-    transform: scale(1.1);
-}*/
 
 img {
     border-radius: 1em;
 }
+
+/*img:hover {
+        transform: scale(1.1);
+
+}*/
+
 @media only screen and (max-width: 1366px) {
     .box {
-        margin: 5em 10em 5em 10em;
+        margin: 5em 10em 1em 10em;
         padding: 3em;
     }
 }
