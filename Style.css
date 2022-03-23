@@ -4,7 +4,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: #e2e9ff;
-    line-height: 1.5em;
+    line-height: 1.7em;
     font-size: 1em;
     
     animation: fadein 0.75s ease forwards; 
@@ -17,16 +17,16 @@ body {
             opacity: 1;
         }
  }  
+
 .box {
     background-color: rgba(10, 10, 20, 0.918);
     backdrop-filter: blur(.3em);
-    margin: 10em 20em 1em 20em;
+    margin: 10em 30em 1em 30em;
     padding: 3em;
     border-style: solid;
     border-width: .1em;
     border-radius: 3em;
 }
-
 
 #CommissionTypes  {
     display: flex;
