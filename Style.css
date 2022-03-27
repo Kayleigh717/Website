@@ -1,14 +1,17 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url(Assets/pattern.webp);
     background-position: center;
     background-attachment: fixed;
     color: #e2e9ff;
     line-height: 1.7em;
     font-size: 1em;
-    
     animation: fadein 0.75s ease forwards; 
 }
+header img:hover {
+    transform: scale(1.1);
+}
+
 @keyframes fadein{
         from{
             opacity: 0;
@@ -25,14 +28,22 @@ body {
     padding: 3em;
     border-style: solid;
     border-width: .1em;
-    border-radius: 3em;
+    border-radius: 1em;
+}
+
+hr {
+    border-style: dashed;
+    border-top: 1px;
+    opacity: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 #CommissionTypes  {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -42,19 +53,24 @@ h1 {
 h2 {
     color: #8f0043;
 }
-#nav {
+nav a {
     background-color: rgba(10, 10, 20, 0);
     color:#e2e9ff;
-    padding: 10px 10px;
+    padding: 10px;
     margin: .5em;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-    border-radius: 5em;
+    border-radius: 1em;
     border-color: #e2e9ff;
     border-style: outset;
     border-width: 2px;
   }
+nav a:hover {
+    color:#00ccff;
+    border-color:#00ccff;
+    transform: scale(1.1);
+}
 
 a:visited {
     color:#e2e9ff;
@@ -63,18 +79,12 @@ a:active {
     color:#e2e9ff;
 }
 a:hover {
-    transform: scale(1.1);
     color: #00ccff;
 }
-
-img {
+#CommissionTypes img {
+    margin: 3px;
     border-radius: 1em;
 }
-
-/*img:hover {
-        transform: scale(1.1);
-
-}*/
 
 @media only screen and (max-width: 1600px) {
     .box {
