@@ -102,7 +102,10 @@ a:hover {
     .box {
         margin: .5em .5em .5em .5em;
         padding: 1em;
-        font-size: .8em;
+        font-size: .64em;
+    }
+    p, li, a {
+        font-size: 1.4em;
     }
     img {
         max-width: 100%;
