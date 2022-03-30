@@ -71,7 +71,9 @@ nav a:hover {
     border-color:#00ccff;
     transform: scale(1.1);
 }
-
+#Prices img {
+    max-width: 200px;
+}
 a:visited {
     color:#e2e9ff;
   }
