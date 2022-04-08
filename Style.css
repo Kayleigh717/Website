@@ -11,7 +11,6 @@ body {
 header img:hover {
     transform: scale(1.1);
 }
-
 @keyframes fadein{
         from{
             opacity: 0;
