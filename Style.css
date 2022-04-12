@@ -71,7 +71,12 @@ nav a:hover {
     transform: scale(1.1);
 }
 #Prices img {
-    max-width: 200px;
+    max-width: 225px;
+    margin: 5px;
+    border-radius: 10px;
+}
+#Prices img:hover {
+    transform: scale(2);
 }
 a:visited {
     color:#e2e9ff;
@@ -81,10 +86,6 @@ a:active {
 }
 a:hover {
     color: #00ccff;
-}
-#CommissionTypes img {
-    margin: 3px;
-    border-radius: 1em;
 }
 
 @media only screen and (max-width: 1600px) {
