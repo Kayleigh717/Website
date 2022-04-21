@@ -5,11 +5,14 @@ body {
     background-attachment: fixed;
     color: #e2e9ff;
     line-height: 1.7em;
-    font-size: 1em;
+    font-size: 1.1em;
     animation: fadein 0.75s ease forwards; 
 }
 header img:hover {
     transform: scale(1.1);
+}
+.donate-button {
+    margin: 15px;
 }
 @keyframes fadein{
         from{
@@ -21,13 +24,13 @@ header img:hover {
  }  
 
 .box {
-    background-color: rgba(10, 10, 20, 0.918);
+    background-color: rgba(0, 0, 0, 0.863);
     backdrop-filter: blur(.3em);
-    margin: 10em 30em 1em 30em;
+    margin: 10em 30em 10em 30em;
     padding: 3em;
     border-style: solid;
     border-width: .1em;
-    border-radius: 1em;
+    border-radius: 50px;
 }
 
 hr {
@@ -38,13 +41,6 @@ hr {
     margin-bottom: 2em;
 }
 
-#CommissionTypes  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 h1 {
     color: #8f0043;
     text-transform: capitalize;
@@ -52,32 +48,38 @@ h1 {
 h2 {
     color: #8f0043;
 }
+/*#back {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+
+}*/
 nav a {
     background-color: rgba(10, 10, 20, 0);
     color:#e2e9ff;
-    padding: 10px;
-    margin: .5em;
+    padding: 5px;
     text-align: center; 
     text-decoration: none;
-    display: inline-block;
-    border-radius: 1em;
+    padding: 10px;
+    border-radius: 15px;
     border-color: #e2e9ff;
     border-style: outset;
     border-width: 2px;
+    margin: 5px;
   }
 nav a:hover {
     color:#00ccff;
     border-color:#00ccff;
     transform: scale(1.1);
 }
-#Prices img {
+/*#Prices img {
     max-width: 225px;
     margin: 5px;
     border-radius: 10px;
 }
 #Prices img:hover {
     transform: scale(2);
-}
+}*/
 a:visited {
     color:#e2e9ff;
   }
@@ -87,6 +89,35 @@ a:active {
 a:hover {
     color: #00ccff;
 }
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item {
+    margin: 30px;
+}
+.item img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1600px) {
     .box {
@@ -104,13 +135,13 @@ a:hover {
     .box {
         margin: .5em .5em .5em .5em;
         padding: 1em;
-        font-size: .64em;
-    }
-    p, li, a {
-        font-size: 1.4em;
+        font-size: .9em;
     }
     img {
         max-width: 100%;
         max-height: 100%;
+        }
+        .item {
+            margin: 0;
         }
 }

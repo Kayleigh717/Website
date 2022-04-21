@@ -15,13 +15,15 @@
 				<a href="index.html"><img src="Assets/logo.webp" width="300px" height="auto"></a>
 			</div>
 			<nav>
-				<a href="javascript:history.back()" id="nav">Back</a>
+				<div id="back">
+					<a href="javascript:history.back()" id="nav">Back</a>
+				</div>
 			</nav>
 		</header>
 		<main align="center">
 			<h1>&#11089 Ways to support me &#11089</h1>
 			<section>
-				<div id="donate-button-container">
+				<div class="donate-button">
 					<div id="donate-button"></div>
 					<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
 					<script>
@@ -36,18 +38,21 @@
 						}).render('#donate-button');
 					</script>
 				</div>
-				<a href="https://www.patreon.com/bePatron?u=8891234"
+				<div class="donate-button">
+					<a href="https://www.patreon.com/bePatron?u=8891234"
 					data-patreon-widget-type="become-patron-button">Become a Patron!</a>
 				<script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-				<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-				<script
-					type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'Y8Y31QKRX'); kofiwidget2.draw();</script>
+				</div>
+				<div class="donate-button">
+					<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+					<script
+						type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'Y8Y31QKRX'); kofiwidget2.draw();</script>
+				</div>
 			</section>
 		</main>
 	</div>
 	<footer id="footer" align="center">
-		<p>Scarletspectrum.art@gmail.com</p>
-		<p>&copy;ScarletSpectrum</p>
+
 	</footer>
 </body>
 
