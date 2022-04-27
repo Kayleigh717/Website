@@ -6,9 +6,6 @@ html {
 }
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*background-image: url(Assets/pattern.webp);
-    background-position: center;
-    background-attachment: fixed;*/
     font-size: 15px;
     line-height: 1.7em;
     color: #e2e9ff;
@@ -63,6 +60,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 .Links {
+
     display: flex;
     justify-content:space-evenly;
     flex-direction: row;
@@ -95,17 +93,25 @@ a:hover {
     justify-content: space-evenly;
     gap: 3em;
 }
+.item {
+    margin: 1em;
+}
 .item img {
     width: 400px;
     border-radius: 10px;
 }
-
+.price {
+    color: #e2e9ff;
+}
+.inline {
+    display: inline;
+}
 @media only screen and (min-width: 1500px) {
     .box {
         margin: 10em 20em;
         padding: 2em;
-        font-size: 1.5em;
-        line-height: 1.5em;
+        font-size: 1.3em;
+        line-height: 1.3em;
     }
     .recentupdates div {
         width: 400px;
