@@ -60,12 +60,12 @@ nav a:hover {
     transform: scale(1.1);
 }
 .Links {
-
+    justify-content:center;
     display: flex;
-    justify-content:space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type:none;
+    gap: 3em;
 }
 .recentupdates {
     display: flex;
