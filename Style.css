@@ -45,11 +45,9 @@ p {
 }
 nav a {
     display: inline-block;
-    text-align: center;
-    background-color: rgba(10, 10, 20, 0);
     color:#e2e9ff;
-    text-decoration: none;
     padding: .5em;
+    text-decoration: none;
     border: 2px solid #e2e9ff;
     border-radius: 50px;
     margin: .2rem;
@@ -59,13 +57,14 @@ nav a:hover {
     border-color:#00ccff;
     transform: scale(1.1);
 }
+/* Socials */
 .Links {
-    justify-content:center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    list-style-type:none;
+    justify-content: center;
     gap: 3em;
+    list-style-type:none;
 }
 .recentupdates {
     display: flex;
@@ -90,8 +89,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 3em;
+    justify-content: space-around;
 }
 .item {
     margin: 1em;
@@ -99,12 +97,19 @@ a:hover {
 .item img {
     width: 400px;
     border-radius: 10px;
+    box-shadow: 0 0 15px black;
 }
+
 .price {
     color: #e2e9ff;
 }
 .inline {
     display: inline;
+}
+/*TOS FLEX*/
+#Terms {
+    display: flex;
+    flex-direction: column;
 }
 @media only screen and (min-width: 1500px) {
     .box {
