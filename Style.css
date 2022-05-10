@@ -12,31 +12,38 @@ body {
 }
 
 header img:hover {
-    transform: scale(1.1);
+    animation-name: hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 .donate-button {
     margin: 15px;
 }
 
 .box {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.831);
     backdrop-filter: blur(.3em);
     border: 1px solid #e2e9ff;
     border-radius: 50px;
     margin: 1em;
     padding: 2em;
-    animation: fadein 0.75s ease forwards; 
     backdrop-filter: blur(10px);
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-timing-function:ease;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    0% {
+        opacity: 0%;
+        scale: 1.01;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
-@keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-} 
 h1, h2 {
     color: #8f0043;
 }
@@ -53,9 +60,16 @@ nav a {
     margin: .2rem;
   }
 nav a:hover {
-    color:#00ccff;
-    border-color:#00ccff;
-    transform: scale(1.1);
+    animation-name: hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes hover {
+    100% {
+        scale: 1.1;
+        color:#00ccff;
+        border-color:#00ccff;
+    }
 }
 /* Socials */
 .Links {
@@ -83,7 +97,9 @@ a:visited, a:active, a:visited, a:link {
   }
 
 a:hover {
-    color: #00ccff;
+    animation-name: hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 .container {
     display: flex;
@@ -111,6 +127,8 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+/*animation*/
+
 @media only screen and (min-width: 1500px) {
     .box {
         margin: 10em 20em;
