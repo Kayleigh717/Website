@@ -1,32 +1,23 @@
+*{
+
+}
+
 html {
     background-image: url(Assets/Drago-Scar.webp);
     background-attachment: fixed;
-    background-repeat:no-repeat;
     background-size: cover;
-}
-body {
+    box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     line-height: 1.7em;
     color: #e2e9ff;
 }
 
-header img:hover {
-    animation-name: hover;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-.donate-button {
-    margin: 15px;
-}
-
 .box {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.831);
-    backdrop-filter: blur(.3em);
+    background-color: rgba(0, 0, 0, 0.904);
     border: 1px solid #e2e9ff;
     border-radius: 50px;
-    margin: 1em;
+    margin-bottom: 0;
     padding: 2em;
     backdrop-filter: blur(10px);
     animation-name: appear;
@@ -34,14 +25,15 @@ header img:hover {
     animation-timing-function:ease;
     animation-fill-mode: forwards;
 }
-@keyframes appear {
-    0% {
-        opacity: 0%;
-        scale: 1.01;
-    }
-    100% {
-        opacity: 100%;
-    }
+
+header img:hover {
+    animation-name: hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.donate-button {
+    margin: 15px;
 }
 
 h1, h2 {
@@ -50,36 +42,33 @@ h1, h2 {
 p {
     color: #e2e9ff;
 }
+/* header nav */
 nav a {
     display: inline-block;
     color:#e2e9ff;
     padding: .5em;
+    margin: 0 .5em;
     text-decoration: none;
     border: 2px solid #e2e9ff;
     border-radius: 50px;
-    margin: .2rem;
   }
 nav a:hover {
     animation-name: hover;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
-@keyframes hover {
-    100% {
-        scale: 1.1;
-        color:#00ccff;
-        border-color:#00ccff;
-    }
-}
+
 /* Socials */
 .Links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 3em;
     list-style-type:none;
+    align-content: space-around;
+    justify-content: center;
 }
+
 .recentupdates {
     display: flex;
     flex-direction: row;
@@ -101,6 +90,7 @@ a:hover {
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
+/*COMMISSION PRICES*/
 .container {
     display: flex;
     flex-direction: row;
@@ -119,19 +109,43 @@ a:hover {
 .price {
     color: #e2e9ff;
 }
-.inline {
-    display: inline;
-}
-/*TOS FLEX*/
+
+/*TOS*/
 #Terms {
     display: flex;
     flex-direction: column;
 }
-/*animation*/
+/*ANIMATION*/
+@keyframes appear {
+    0% {
+        opacity: 0%;
+        scale: 1.01;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes hover {
+    100% {
+        scale: 1.1;
+        color:#00ccff;
+        border-color:#00ccff;
+    }
+}
+@keyframes center {
+    from {
 
+    }
+    to {
+        filter: blur(0px);
+    }
+}
+/* footer */
+
+/*media*/
 @media only screen and (min-width: 1500px) {
     .box {
-        margin: 10em 20em;
+        margin: 10em 20em 0 20em;
         padding: 2em;
         font-size: 1.3em;
         line-height: 1.3em;
@@ -139,4 +153,11 @@ a:hover {
     .recentupdates div {
         width: 400px;
     }
+}
+hr {
+    color: #e2e9ff;
+    opacity: 10%;
+    border-style: dashed;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
