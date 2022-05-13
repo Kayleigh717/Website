@@ -1,7 +1,3 @@
-*{
-
-}
-
 html {
     background-image: url(Assets/Drago-Scar.webp);
     background-attachment: fixed;
@@ -25,24 +21,29 @@ html {
     animation-timing-function:ease;
     animation-fill-mode: forwards;
 }
-
-header img:hover {
-    animation-name: hover;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-
-.donate-button {
-    margin: 15px;
-}
-
+/* COLORS */
 h1, h2 {
     color: #8f0043;
 }
 p {
     color: #e2e9ff;
 }
-/* header nav */
+/* LOGO */
+header img:hover {
+    animation-name: hover;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+/* SUPPORT */
+#support {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    /* justify-content: space-around; */
+}
+
+/* HEADER NAV */
 nav a {
     display: inline-block;
     color:#e2e9ff;
@@ -54,11 +55,11 @@ nav a {
   }
 nav a:hover {
     animation-name: hover;
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-fill-mode: forwards;
 }
 
-/* Socials */
+/* SOCIALS */
 .Links {
     display: flex;
     flex-direction: row;
@@ -68,7 +69,16 @@ nav a:hover {
     align-content: space-around;
     justify-content: center;
 }
+a:visited, a:active, a:visited, a:link {
+    color:#e2e9ff;
+  }
 
+a:hover {
+    animation-name: hover;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+/* RECENT UPDATES */
 .recentupdates {
     display: flex;
     flex-direction: row;
@@ -78,19 +88,27 @@ nav a:hover {
 .recentupdates div {
     width: 250px;
 }
-img {
-    max-width: 100%;
-}
-a:visited, a:active, a:visited, a:link {
-    color:#e2e9ff;
-  }
 
-a:hover {
-    animation-name: hover;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
+/* WILL/WONT DRAW */
+
+#extras, #bundle {
+    text-align: center;
 }
+#yeslist li, #nolist li {
+    list-style-type: none;
+}
+
+#yeslist li::before {
+    content: '\2713';
+    margin: 0 1em;
+}
+#nolist li::before {
+    content: '\0058';
+    margin: 0 1em;
+}
+
 /*COMMISSION PRICES*/
+
 .container {
     display: flex;
     flex-direction: row;
@@ -109,13 +127,15 @@ a:hover {
 .price {
     color: #e2e9ff;
 }
-
-/*TOS*/
+img {
+    max-width: 100%;
+}
+/* TOS */
 #Terms {
     display: flex;
     flex-direction: column;
 }
-/*ANIMATION*/
+/* ANIMATION */
 @keyframes appear {
     0% {
         opacity: 0%;
