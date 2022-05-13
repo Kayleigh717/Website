@@ -40,6 +40,7 @@ header img:hover {
     flex-direction: row;
     justify-content: center;
     gap: 3em;
+    flex-wrap: wrap;
     /* justify-content: space-around; */
 }
 
@@ -152,14 +153,7 @@ img {
         border-color:#00ccff;
     }
 }
-@keyframes center {
-    from {
 
-    }
-    to {
-        filter: blur(0px);
-    }
-}
 /* footer */
 
 /*media*/
