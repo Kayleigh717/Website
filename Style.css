@@ -16,23 +16,16 @@ html {
     margin-bottom: 0;
     padding: 2em;
     backdrop-filter: blur(10px);
-    animation-name: appear;
-    animation-duration: 1.5s;
-    animation-timing-function:ease;
-    animation-fill-mode: forwards;
+    animation:appear 1.5s ease forwards;
 }
 /* COLORS */
 h1, h2 {
     color: #8f0043;
 }
-p {
-    color: #e2e9ff;
-}
+
 /* LOGO */
 header img:hover {
-    animation-name: hover;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
+    animation: hover 150ms ease-out forwards;
 }
 /* SUPPORT */
 #support {
@@ -55,9 +48,9 @@ nav a {
     border-radius: 50px;
   }
 nav a:hover {
-    animation-name: hover;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
+    animation:hover 150ms ease-out forwards;
+    color:#00ccff;
+    border-color:#00ccff;
 }
 
 /* SOCIALS */
@@ -78,6 +71,7 @@ a:hover {
     animation-name: hover;
     animation-duration: 300ms;
     animation-fill-mode: forwards;
+    color:#00ccff;
 }
 /* RECENT UPDATES */
 .recentupdates {
@@ -138,19 +132,17 @@ img {
 }
 /* ANIMATION */
 @keyframes appear {
-    0% {
+    from {
         opacity: 0%;
-        scale: 1.01;
+        transform: scale(1.02);
     }
-    100% {
+    to {
         opacity: 100%;
     }
 }
 @keyframes hover {
     100% {
         scale: 1.1;
-        color:#00ccff;
-        border-color:#00ccff;
     }
 }
 
