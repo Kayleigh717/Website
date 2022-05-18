@@ -102,6 +102,7 @@ a:hover {
     margin: 0 1em;
 }
 
+
 /*COMMISSION PRICES*/
 
 .container {
@@ -158,6 +159,11 @@ img {
     }
     .recentupdates div {
         width: 400px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 }
 hr {
