@@ -1,175 +1,90 @@
-html {
-    background-image: url(Assets/Drago-Scar.webp);
-    background-attachment: fixed;
-    background-size: cover;
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    line-height: 1.7em;
-    color: #e2e9ff;
+
+body {
+     text-align: center;
+     max-width: 700px;
+     margin: auto auto;
+     font-family: Georgia;
+     color: #F2F3F6;
+     background-color: #000025;
+     padding: 1em;
+     letter-spacing: .1em;
+     line-height: 1.5em;
+}
+h1, h2, h3, h4, h5 {
+     color: #9D064B;
+     text-transform: uppercase;
 }
 
-.box {
-    background-color: rgba(0, 0, 0, 0.904);
-    border: 1px solid #e2e9ff;
-    border-radius: 50px;
-    margin-bottom: 0;
-    padding: 2em;
-    backdrop-filter: blur(10px);
-    animation:appear 1.5s ease forwards;
+hr {
+     border-color: #46103f;
+     border-style: dashed;
+     margin: 2em 0;
 }
-/* COLORS */
-h1, h2 {
-    color: #8f0043;
+p, a {
+     font-family: Verdana;
+     text-decoration: none;
 }
-
-/* LOGO */
-header img:hover {
-    animation: hover 150ms ease-out forwards;
-}
-/* SUPPORT */
-#support {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3em;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
+p {
+     text-align: left;
 }
 
-/* HEADER NAV */
-nav a {
-    display: inline-block;
-    color:#e2e9ff;
-    padding: .5em;
-    margin: 0 .5em;
-    text-decoration: none;
-    border: 2px solid #e2e9ff;
-    border-radius: 50px;
-  }
-nav a:hover {
-    animation:hover 150ms ease-out forwards;
-    color:#00ccff;
-    border-color:#00ccff;
+#info p {
+     text-align: center;
+}
+a {
+     display: block;
+     color: F2F3F6;
+     border: 1px solid #9D064B;
+     padding: 1em;
+     margin: 1em;
+     border-radius: 5em 0;
+     letter-spacing: .5em;
 }
 
-/* SOCIALS */
-.Links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3em;
-    list-style-type:none;
-    align-content: space-around;
-    justify-content: center;
-}
-a:visited, a:active, a:visited, a:link {
-    color:#e2e9ff;
-  }
+a:link, a:visited {
+     color: #F2F3F6;
+     background: #9D064B;
 
+}
 a:hover {
-    animation-name: hover;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
-    color:#00ccff;
-}
-/* RECENT UPDATES */
-.recentupdates {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-.recentupdates div {
-    width: 250px;
+     color:#3BE1FF;
+     border: 1px solid #3BE1FF;
+     background: #000025;
+     transform: scale(1.05);
+     box-shadow: #3BE1FF 5px 5px;
 }
 
-/* WILL/WONT DRAW */
-
-#extras, #bundle {
-    text-align: center;
-}
-#yeslist li, #nolist li {
-    list-style-type: none;
+/* COMMISSION INFO */
+.item p {
+     text-align: center;
+     margin-top: 0;
+     margin-bottom: 2em;
 }
 
-#yeslist li::before {
-    content: '\2713';
-    margin: 0 1em;
+ img {
+     max-width: 100%
 }
-#nolist li::before {
-    content: '\0058';
-    margin: 0 1em;
-}
-
-
-/*COMMISSION PRICES*/
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.item {
-    margin: 1em;
-}
-.item img {
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px black;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .item {
+      max-width: 300px;
+ }
+
+ /* TERMS OF SERVICE */
+
+li {
+     text-align: left;
 }
 
-.price {
-    color: #e2e9ff;
-}
-img {
-    max-width: 100%;
-}
-/* TOS */
-#Terms {
-    display: flex;
-    flex-direction: column;
-}
-/* ANIMATION */
-@keyframes appear {
-    from {
-        opacity: 0%;
-        transform: scale(1.02);
-    }
-    to {
-        opacity: 100%;
-    }
-}
-@keyframes hover {
-    100% {
-        scale: 1.1;
-    }
-}
+/* FOOTER */
 
-/* footer */
-
-/*media*/
-@media only screen and (min-width: 1500px) {
-    .box {
-        margin: 10em 20em 0 20em;
-        padding: 2em;
-        font-size: 1.3em;
-        line-height: 1.3em;
-    }
-    .recentupdates div {
-        width: 400px;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-}
-hr {
-    color: #e2e9ff;
-    opacity: 10%;
-    border-style: dashed;
-    margin-top: 1em;
-    margin-bottom: 1em;
+footer p {
+     text-align: center;
+     margin-top: 0;
 }
