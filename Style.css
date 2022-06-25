@@ -5,11 +5,19 @@ body {
      margin: auto auto;
      font-family: Georgia;
      color: #F2F3F6;
-     background-color: #000025;
      padding: 1em;
      letter-spacing: .1em;
      line-height: 1.5em;
 }
+
+body {
+     background: linear-gradient(45deg, #000025 25%, transparent 25%), linear-gradient(315deg, #000025 25%, transparent 25%),linear-gradient(45deg, transparent 24%,#000030 25%, #000030 45%, transparent 45%), linear-gradient(315deg, transparent 24%,#000030 25%, #000030 45%, transparent 45%);
+     background-size: 15em 15em;
+     background-color: #000025;
+     opacity: 1;
+     background-attachment: fixed;
+}
+
 h1, h2, h3, h4, h5 {
      color: #9D064B;
      text-transform: uppercase;
@@ -28,12 +36,9 @@ p {
      text-align: left;
 }
 
-#info p {
-     text-align: center;
-}
 a {
      display: block;
-     color: F2F3F6;
+     color: #F2F3F6;
      border: 1px solid #9D064B;
      padding: 1em;
      margin: 1em;
@@ -42,9 +47,7 @@ a {
 }
 
 a:link, a:visited {
-     color: #F2F3F6;
      background: #9D064B;
-
 }
 a:hover {
      color:#3BE1FF;
@@ -62,7 +65,7 @@ a:hover {
 }
 
  img {
-     max-width: 100%
+     max-width: 100%;
 }
 
 .container {
@@ -78,6 +81,9 @@ a:hover {
 
  /* TERMS OF SERVICE */
 
+.center {
+     text-align: center;
+}
 li {
      text-align: left;
 }
