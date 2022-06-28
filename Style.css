@@ -1,5 +1,5 @@
 :root {
-     --red: #9D064B;
+     --red: #ac0550;
      --white: #F2F3F6;
      --lightBlue: #3BE1FF;
      --darkBlue: #000025;
@@ -58,11 +58,7 @@ a:hover {
 }
 
 /* COMMISSION INFO */
-.item p {
-     /* text-align: center;
-     margin-top: 0;
-     margin-bottom: 2em; */
-}
+
 
 .container {
      display: flex;
@@ -87,6 +83,10 @@ span {
      margin-top: 0;
 }
 
+.extras p {
+     text-align: center;
+}
+
  /* TERMS OF SERVICE */
 
 .center {
@@ -100,5 +100,6 @@ li {
 
 footer p {
      text-align: center;
-     margin-top: 0;
+     margin: auto;
 }
+
