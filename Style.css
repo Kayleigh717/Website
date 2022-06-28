@@ -1,4 +1,6 @@
-
+/* :root {
+     
+} */
 body {
      text-align: center;
      max-width: 700px;
@@ -23,11 +25,6 @@ h1, h2, h3, h4, h5 {
      text-transform: uppercase;
 }
 
-hr {
-     border-color: #46103f;
-     border-style: dashed;
-     margin: 2em 0;
-}
 p, a {
      font-family: Verdana;
      text-decoration: none;
@@ -64,10 +61,6 @@ a:hover {
      margin-bottom: 2em;
 }
 
- img {
-     max-width: 100%;
-}
-
 .container {
      display: flex;
      flex-direction: row;
@@ -76,8 +69,13 @@ a:hover {
      align-items: center;
  }
  .item {
-      max-width: 300px;
+      /* max-width: 300px; */
+      max-width: 100%;
  }
+.item img {
+     max-width: 100%;
+     max-height: 350px;
+}
 
  /* TERMS OF SERVICE */
 
