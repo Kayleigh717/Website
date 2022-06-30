@@ -35,8 +35,10 @@ p, a {
 p {
      text-align: left;
 }
-
-a {
+.links p {
+     text-align: center;
+}
+.links a {
      display: block;
      color: var(--white);
      border: 1px solid var(--red);
@@ -44,19 +46,23 @@ a {
      margin: 1em;
      border-radius: 5em 0;
      letter-spacing: .5em;
+     width: 75%;
+     margin: 1em auto;
 }
 
-a:link, a:visited {
+.links a:link, a:visited {
      background: var(--red);
 }
-a:hover {
+.links a:hover {
      color:var(--lightBlue);
      border: 1px solid var(--lightBlue);
      background: var(--darkBlue);
      transform: scale(1.05);
      box-shadow: var(--lightBlue) 5px 5px;
 }
-
+header p {
+     text-align: center;
+}
 /* COMMISSION INFO */
 
 
