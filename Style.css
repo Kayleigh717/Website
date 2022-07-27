@@ -13,6 +13,7 @@ body {
      padding: 1em;
      letter-spacing: .1em;
      line-height: 1.5em;
+
 }
 
 body {
@@ -49,20 +50,38 @@ p {
      width: 75%;
      margin: 1em auto;
 }
-
+header p {
+     text-align: center;
+}
 .links a:link, a:visited {
      background: var(--red);
 }
 .links a:hover {
-     color:var(--lightBlue);
+     /* color:var(--lightBlue);
      border: 1px solid var(--lightBlue);
      background: var(--darkBlue);
      transform: scale(1.05);
-     box-shadow: var(--lightBlue) 5px 5px;
+     box-shadow: var(--lightBlue) 5px 5px; */
+     animation-name: btn-animation;
+     animation-duration: .5s;
+     animation-fill-mode: forwards;
 }
-header p {
-     text-align: center;
-}
+
+/* ANIMATION */
+@keyframes btn-animation {
+     50% {     
+          border: 1px solid var(--lightBlue);
+          background: var(--darkBlue);
+          transform: scale(1.05);
+          box-shadow: var(--lightBlue) 5px 5px;
+     }
+     100% {
+          border: 1px solid var(--lightBlue);
+          background: var(--darkBlue);
+          /* box-shadow: var(--lightBlue) 5px 5px; */
+          transform: scale(1.0);}
+     }
+
 /* COMMISSION INFO */
 
 
