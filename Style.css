@@ -6,7 +6,7 @@
 }
 body {
      text-align: center;
-     max-width: 700px;
+     max-width: 1000px;
      margin: auto auto;
      font-family: Georgia;
      color: var(--white);
@@ -28,7 +28,9 @@ h1, h2, h3, h4, h5 {
      color: var(--red);
      text-transform: uppercase;
 }
-
+header p {
+     text-align: center;
+}
 p, a {
      font-family: Verdana;
      text-decoration: none;
@@ -36,6 +38,7 @@ p, a {
 p {
      text-align: left;
 }
+/* LINKS  */
 .links p {
      text-align: center;
 }
@@ -50,9 +53,7 @@ p {
      width: 75%;
      margin: 1em auto;
 }
-header p {
-     text-align: center;
-}
+
 .links a:link, a:visited {
      background: var(--red);
 }
@@ -93,19 +94,24 @@ header p {
      align-items: center;
      gap: 2em;
  }
- .item {
-      max-width: 100%;
- }
-.item img {
-     max-width: 100%;
-     max-height: 350px;
+
+.examples {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1em;
+     align-items: center;
+     justify-content: center;
+}
+.examples img {
+     max-width: 300px;
+     border-radius: 1em 0;
 }
 span {
      color: var(--white);
 }
 
 .item h3 {
-     margin-top: 0;
+     margin-top: 1em;
 }
 
 .extras p {
