@@ -68,20 +68,6 @@ p {
      animation-fill-mode: forwards;
 }
 
-/* ANIMATION */
-@keyframes btn-animation {
-     50% {     
-          border: 1px solid var(--lightBlue);
-          background: var(--darkBlue);
-          transform: scale(1.05);
-          box-shadow: var(--lightBlue) 5px 5px;
-     }
-     100% {
-          border: 1px solid var(--lightBlue);
-          background: var(--darkBlue);
-          /* box-shadow: var(--lightBlue) 5px 5px; */
-          transform: scale(1.0);}
-     }
 
 /* COMMISSION INFO */
 
@@ -104,7 +90,7 @@ p {
 }
 .examples img {
      max-width: 300px;
-     border-radius: 1em 0;
+     /* border-radius: 1em 0; */
 }
 span {
      color: var(--white);
@@ -117,6 +103,13 @@ span {
 .extras p {
      text-align: center;
 }
+
+/* .examples img:hover {
+     animation-name: preview;
+     animation-duration: .6s;
+     animation-fill-mode: forwards;
+     animation-timing-function:ease-in-out;}
+ */
 
  /* TERMS OF SERVICE */
 
@@ -133,4 +126,32 @@ footer p {
      text-align: center;
      margin: auto;
 }
-
+/* ANIMATION */
+@keyframes btn-animation {
+     50% {     
+          border: 1px solid var(--lightBlue);
+          background: var(--darkBlue);
+          transform: scale(1.05);
+          box-shadow: var(--lightBlue) 5px 5px;
+     }
+     100% {
+          border: 1px solid var(--lightBlue);
+          background: var(--darkBlue);
+          /* box-shadow: var(--lightBlue) 5px 5px; */
+          transform: scale(1.0);}
+     }
+@media (min-width: 1000px) {
+     @keyframes preview {
+          0% {
+               transform: scale(1);
+          }
+     
+          60% {
+               transform: scale(1.5);
+          }
+          100% {
+               transform: scale(1.3);
+          }
+     }
+     
+}     
