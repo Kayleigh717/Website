@@ -46,7 +46,7 @@ p {
 }
 hr {
      border-color: var(--offWhite);
-     opacity: 15%;
+     opacity: 0.15;
      border-style: dashed;
      margin: 1.5em 0;
 }
@@ -149,7 +149,7 @@ li {
 footer p {
      text-align: center;
      margin: auto;
-     opacity: 35%;
+     opacity: 0.35;
 }
 /* ANIMATION */
 @keyframes btn-animation {
