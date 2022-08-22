@@ -10,7 +10,7 @@ body {
      text-align: center;
      max-width: 1000px;
      margin: auto auto;
-     font-family: Georgia;
+     font-family: Georgia, 'Times New Roman', Times, serif;
      color: var(--white);
      padding: 1em;
      letter-spacing: .1em;
@@ -34,7 +34,7 @@ header p {
      text-align: center;
 }
 p, a {
-     font-family: Verdana;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      text-decoration: none;
 }
 p {
@@ -140,7 +140,7 @@ span {
 }
 li {
      text-align: left;
-     font-family: Verdana;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      color: var(--offWhite);
 }
 
