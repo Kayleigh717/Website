@@ -1,9 +1,10 @@
 :root {
      --red: #ac0550;
-     --white: #F2F3F6;
+     --white: #d6dbeb;
      --lightBlue: #3BE1FF;
      --darkBlue: #000025;
-     --green: rgb(0, 192, 102);
+     --green: #00c066;
+     --offWhite: #c4c7f9;
 }
 body {
      text-align: center;
@@ -25,7 +26,7 @@ body {
      background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
      color: var(--red);
      text-transform: uppercase;
 }
@@ -38,6 +39,16 @@ p, a {
 }
 p {
      text-align: left;
+     color: var(--offWhite);
+}
+#info p {
+     text-align: center;
+}
+hr {
+     border-color: var(--offWhite);
+     opacity: 15%;
+     border-style: dashed;
+     margin: 1.5em 0;
 }
 /* LINKS  */
 .links p {
@@ -59,16 +70,13 @@ p {
      background: var(--red);
 }
 .links a:hover {
-     /* color:var(--lightBlue);
-     border: 1px solid var(--lightBlue);
-     background: var(--darkBlue);
-     transform: scale(1.05);
-     box-shadow: var(--lightBlue) 5px 5px; */
      animation-name: btn-animation;
      animation-duration: .5s;
      animation-fill-mode: forwards;
 }
-
+footer a:visited {
+     color: var(--offWhite);
+}
 
 /* COMMISSION INFO */
 
@@ -96,12 +104,16 @@ p {
 span {
      color: var(--white);
 }
-
+/* .item p {
+     text-align: center;
+     max-width: 800px;
+     margin: auto;
+} */
 .item h3 {
      margin-top: 1em;
 }
 
-.extras p {
+#extras p {
      text-align: center;
 }
 /* BANNER */
@@ -121,13 +133,6 @@ span {
 } 
 
 
-/* .examples img:hover {
-     animation-name: preview;
-     animation-duration: .6s;
-     animation-fill-mode: forwards;
-     animation-timing-function:ease-in-out;}
- */
-
  /* TERMS OF SERVICE */
 
 .center {
@@ -135,6 +140,8 @@ span {
 }
 li {
      text-align: left;
+     font-family: Verdana;
+     color: var(--offWhite);
 }
 
 /* FOOTER */
@@ -142,6 +149,7 @@ li {
 footer p {
      text-align: center;
      margin: auto;
+     opacity: 35%;
 }
 /* ANIMATION */
 @keyframes btn-animation {
