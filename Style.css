@@ -1,10 +1,10 @@
 :root {
      --red: #ac0550;
-     --white: #d6dbeb;
+     --white: #e7ebf8;
      --lightBlue: #3BE1FF;
      --darkBlue: #000025;
      --green: #00c066;
-     --offWhite: #c4c7f9;
+     --offWhite: #9599dc;
 }
 body {
      text-align: center;
@@ -117,6 +117,10 @@ span {
 }
 
 #extras p {
+     text-align: center;
+}
+
+#specials p {
      text-align: center;
 }
 /* BANNER */
