@@ -44,6 +44,10 @@ p {
      text-align: left;
      color: var(--offWhite);
 }
+
+mark {
+     background-color: var(--lightBlue);
+}
 #info p {
      text-align: center;
 }
