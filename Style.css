@@ -154,6 +154,16 @@ li {
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      color: var(--offWhite);
 }
+/* QUEUE */
+
+.containerQueue {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+     gap: 2em;
+ }
 
 /* FOOTER */
 
