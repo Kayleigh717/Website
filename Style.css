@@ -123,11 +123,11 @@ footer a:visited {
 
 }
 
-.examples img:hover {
+/* .examples img:hover {
      animation-name: preview;
      animation-duration: .5s;
      animation-fill-mode: forwards;
-}
+} */
 
 span {
      color: var(--white);
