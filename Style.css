@@ -70,6 +70,12 @@ hr {
      border-style: dashed;
      margin: 1.5em 0;
 }
+
+p {
+     text-align: center;
+     margin: auto;
+ }
+
 /* LINKS  */
 .links p {
      text-align: center;
@@ -123,20 +129,11 @@ footer a:visited {
 
 }
 
-/* .examples img:hover {
-     animation-name: preview;
-     animation-duration: .5s;
-     animation-fill-mode: forwards;
-} */
-
 span {
      color: var(--white);
 }
-/* .item p {
-     text-align: center;
-     max-width: 800px;
-     margin: auto;
-} */
+
+
 .item h3 {
      margin-top: 1em;
 }
@@ -230,3 +227,5 @@ footer p {
 	40% {transform: translateY(-10px);}
 	60% {transform: translateY(-5px);}
  }
+
+
