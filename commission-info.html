@@ -1,162 +1,73 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Commission Info</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/Style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <div class="box">
+    <head>
+        <title>Commission-Info</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/Style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" sizes="64x64" href="Assets/Favicon/apple-touch-icon.png">
+        <script src="myscript.js"></script>
+    </head>
+    <body>
         <header>
-            <!-- <p class="banner">Commissions are now open!</p> -->
-            <div class="logo">
-                <a href="index.html"><img src="Assets/logo-variation.webp" height="auto"></a>
+            <div class="title">
+                <img src="assets/logoTransparent.png">
+                <h1>Scarlet Spectrum</h1>
+                <!-- <p>Freelance Artist</p> -->
+            </div>
+            <div class="buttons">
+                <button onclick="location.href='index.html'">Home</button>
+                <button onclick="location.href='commission-info.html'">Prices</button>
+                <button onclick="location.href='commissionQueue.html'">Queue</button>
+                <button onclick="location.href='termsOfService.html'">Terms</button>
+                <button onclick="location.href='about.html'">About</button>
+
             </div>
         </header>
         <main>
-            <h1>&#9734 COMMISSION INFO &#9734</h1>
-
-            <div>
-                <div id="info" align="center">
-                    <h3>Current status: CLOSED</h3>
-                    <div class="links">
-                        <a href="terms-of-service.html">Terms of Service</a>
-                        <a href="https://trello.com/b/QtGqyzs8" target="_blank">Queue</a>
-                        <!-- <a href="https://trello.com/b/QtGqyzs8" target="_blank">Queue</a> -->
-                   </div>
-                    <hr>
-                    <div align="center">
-                        <h2>HOW TO COMMISSION?</h2>
-                        <h3>Please send all commission inquires to my Discord</h3>
-                        <p>scarletspectrum</p>
-
-                    </div>
-
+            <h2>- Commission info -</h2>
+            <p>Status: CLOSED</p>
+            <p>Please send all commisison inquiries to my Discord: scarletspectrum (see queue for slot availability)</p>
+            <h2>- Prices -</h2>
+            <p>Prices listed are for a single full body character. Additional costs may apply for extra elements or details. </p>
+            <section id="options">
+                <h4>Sketch: $55</h4>
+                <div id="sketch" class="examples">
+                    <img src="examples/sketch.png">
+                    <img src="examples/2971.png">
+                    <img src="examples/2980.png">
                 </div>
-            </div>
-            <hr>
-            <div id="Prices">
-                <div align="center">
-                    <h2>PRICES</h2>
-                    <h3>All prices are in USD</h3>
-                    <p>Please understand that these are my <em>base</em> prices, additional elements / complexity may effect the final cost. See <a href="#extras">extras</a> for more info.</p>
-                    <!-- <p class="center">More examples can be found <a href="https://www.furaffinity.net/gallery/scarletspectrum/folder/1161083/Commissions">here</a></p> -->
+                <h4>Flat Color: $80</h4>
+
+                <div id="flat-color" class="examples">
+                    <img src="examples/flatColor.png">
+                    <img src="examples/2994.png">
+                    <img src="examples/2975.png">
                 </div>
-                <!-- <div id="specials" align="center">
-                    <details id="specials">
-                        <summary><h2>SPECIALS</h2></summary>
-                        <h3>Essentials pack - <s>$235</s> $200</h3>
-                        <p>Includes a ref sheet, icon, and shaded drawing of your character.</p>
-                    <h3>Duo icon - <s>$100</s> $85</h2>
-                        <p>Two character icons interacting with each other in some way.</p>
-                    </details>
-                </div> -->
-                <br>
-                <div class="container prices-flex">
-                    <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/coloredSketch1.webp">
-                            <img src="Assets/Examples/coloredSketch2.webp">
-                            <img src="Assets/Examples/coloredSketch3.webp">
-                        </div>
-                        <h3>Colored Sketch - $30</h3>
-                        <!-- <p>Full body, colored sketch drawing. Comes with a simple flat, gradient or abstract background.</p> -->
-                    </div>
-                    <!-- <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/flatColor1.webp">
-                            <img src="Assets/Examples/flatColor2.webp">
-                            <img src="Assets/Examples/flatColor3.webp">
-                        </div>
-                        <h3>Flat Color - $50</h3>
-                        <p>Full body, flat colored drawing. Comes with a transparent or simple flat, gradient or abstract background.</p>
-                    </div> -->
-                    <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/shaded1.webp">
-                            <img src="Assets/Examples/shaded2.webp">
-                            <img src="Assets/Examples/shaded3.webp">
-                        </div>
-                        <h3>Full Render - $150</h3>
-                        <!-- <p>Full body, shaded drawing. Comes with a transparent or simple flat, gradient or abstract background.</p> -->
-                    </div>
-                    <!-- <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/lockScreen1.webp">
-                            <img src="Assets/Examples/lockScreen2.webp">
-                            <img src="Assets/Examples/lockScreen3.webp">
-                        </div>
-                        <h3>Lock Screen - $75</h3>
-                        <p>Fully shaded, half body drawing. Comes with one fully shaded character and a blurred background. </p>
+                <h4>Shaded: $105</h4>
 
-                    </div> -->
-                    <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/icon1.webp">
-                            <img src="Assets/Examples/icon2.webp">
-                            <img src="Assets/Examples/icon3.webp">
-                        </div>
-                        <h3>Icon - $50</h3>
-                        <!-- <p>Fully shaded icon. Comes with a transparent or simple gradient or blurred background.</p> -->
-
-                    </div>
-                    <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/dakimakura1.webp">
-                            <img src="Assets/Examples/dakimakura2.webp">
-                            <img src="Assets/Examples/dakimakura3.webp">
-                        </div>
-                        <h3>Dakimakura - $250</h3>
-                        <!-- <p>Shaded dakimakura-style commission. Comes with white sheets background (or colored/pattern of your choice)</p> -->
-                    </div>
-
-                    <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/refSheet1.webp">
-                            <img src="Assets/Examples/refSheet2.webp">
-                            <img src="Assets/Examples/refSheet3.webp">
-                        </div>
-                        <h3>Ref Sheet - $100</h3>
-                        <!-- <p>Flat colored ref sheet. Base price includes info (name, gender, species etc.), color palette, patterned background, and two views of your character. Additional elements may cost extra.</p> -->
-                    </div>
-                    <div class="item">
-                        <div class="examples">
-                            <img src="Assets/Examples/scene1.webp">
-                            <img src="Assets/Examples/scene2.webp">
-                            <img src="Assets/Examples/scene3.webp">
-                        </div>
-                        <h3>Scene - $200</h3>
-                        <!-- <p>Fully shaded scene. Base price includes one, full body character and a simple background.</p> -->
-                    </div>
-                    <div id="Other">
-                        <h3>Other</h3>
-                        <p>Have an idea that doesnt quite fit within these commission types? Feel free to contact me anyway and i will let you know if its doable or not :)
-                        </p>
-                    </div>
+                <div id="shaded" class="examples">
+                    <img src="examples/shaded.png">
+                    <img src="examples/2926.png">
+                    <img src="examples/2893.png">
                 </div>
-
-
-
-                <hr>
-                <div id="extras" align="center">
-                    <h2>Extras</h2>
-                    <p>Additional characters: +75%</p>
-                    <p>Alternate edit: $10-$25 (LIMIT 1)</p>
-                    <p>Rush fee (3 business days): +30%</p>
-                    <br>
-                    <p>Other things that may effect pricing: props, complex characters / outift etc.</p>
-                </div>
-
+            </section>
         </main>
-        <hr>
-        <footer id="footer">
-            <p>Have any questions? Email me at general@scarletspectrum.art</p>
-            <a href="https://discord.gg/gBc4NCV">Join The Dragon's Den on Discord!</a>
-		<p>&#169 Scarlet Spectrum 2023</p>
-	</footer>
-    </div>
-</body>
-
+<hr>
+        <footer>
+            <div id="social-buttons">
+                <a href="https://www.deviantart.com/sc4rletspectrum" target="_blank">            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4.364v-4.364h-4.364l-.435.439-2.179 4.124-.647.437h-7.375v6h4.103l.359.404-4.462 8.232v4.364h4.509l.435-.439 2.174-4.124.648-.437h7.234v-6h-3.938l-.359-.438z"/></svg>
+                </a>
+                <a href="https://www.furaffinity.net/user/scarletspectrum/" target="_blank">            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.954 11c3.33 0 7.057 6.123 7.632 8.716.575 2.594-.996 4.729-3.484 4.112-1.092-.271-3.252-1.307-4.102-1.291-.925.016-2.379.836-3.587 1.252-2.657.916-4.717-1.283-4.01-4.073.774-3.051 4.48-8.716 7.551-8.716zm10.793-4.39c1.188.539 1.629 2.82.894 5.27-.704 2.341-2.33 3.806-4.556 2.796-1.931-.877-2.158-3.178-.894-5.27 1.274-2.107 3.367-3.336 4.556-2.796zm-21.968.706c-1.044.729-1.06 2.996.082 5.215 1.092 2.12 2.913 3.236 4.868 1.87 1.696-1.185 1.504-3.433-.082-5.215-1.596-1.793-3.824-2.599-4.868-1.87zm15.643-7.292c1.323.251 2.321 2.428 2.182 5.062-.134 2.517-1.405 4.382-3.882 3.912-2.149-.407-2.938-2.657-2.181-5.061.761-2.421 2.559-4.164 3.881-3.913zm-10.295.058c-1.268.451-1.92 2.756-1.377 5.337.519 2.467 2.062 4.114 4.437 3.269 2.06-.732 2.494-3.077 1.377-5.336-1.125-2.276-3.169-3.721-4.437-3.27z"/></svg>
+                </a>
+                <a href="https://x.com/ScarletSpectrum" target="_blank">            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UClah1O4z2a_U3a9B-J1JFXQ" target="_blank">            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </a>
+                
+                
+                
+                
+            </div>
+        </footer>
+    </body>
 </html>
