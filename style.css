@@ -9,13 +9,14 @@
 /* MAIN */
 
 html {
-    background-image: linear-gradient(black, var(--darkBlue));
+    background-color: var(--darkBlue);
     background-attachment: fixed;
     font-size: larger;
     color: var(--white);
     margin: auto;
-    line-height: 25px;
     max-width: 2000px;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -28,18 +29,22 @@ body {
     align-items: center;
 }
 
-main h1 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--darkBlue), rgba(0, 0, 0, 0));
-    padding: 25px;
-    width: 100%;
+header h1 {
+    font-size: 3em;
 }
+
+header p {
+    margin-top: -25px;
+}
+
 
 h1, h2, h3, h4, h5, p {
     text-align: center;
 }
 
-p {
+p, ol, ul, a {
     color: var(--offWhite);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a {
@@ -51,10 +56,9 @@ a {
     margin: 15px;
     text-align: center;
     border-radius: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    min-width: 300px;
+    width: 250px;
     cursor: pointer;
-    transition: color 0.5s, background-color 0.5s; /* Added transition for smooth hover effect */
+    transition: color 0.5s, background-color 0.5s;e
 }
 
 a:hover {
