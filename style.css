@@ -2,7 +2,7 @@
     --red: #ee0a37;
     --white: hsl(210, 28%, 95%);
     --lightBlue: #00bfff;
-    --darkBlue: #0a0a11;
+    --darkBlue: #0b0b14;
     --offWhite: hsl(210, 28%, 80%);
 }
 
@@ -19,8 +19,14 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
-    animation: load 1s;
+header {
+    animation-name: load;
+    animation-duration: 1s;
+}
+main {
+    animation: load 2s;
+    margin: 1em;
+    padding: 3em;
 }
 
 .title {
@@ -29,9 +35,12 @@ body {
     align-items: center;
 }
 
+
+
 header h1 {
-    font-size: 3em;
+    font-size: 3em; 
 }
+
 
 header p {
     margin-top: -25px;
@@ -58,8 +67,10 @@ a {
     border-radius: 25px;
     width: 250px;
     cursor: pointer;
-    transition: color 0.5s, background-color 0.5s;e
+    transition: color 0.5s, background-color 0.5s;
+
 }
+
 
 a:hover {
     border: 1px var(--red) solid;
