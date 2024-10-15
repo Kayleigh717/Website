@@ -1,66 +1,67 @@
 :root {
     --red: #ee0a37;
-    --white: hsl(210, 28%, 100%);
+    --white: hsl(210, 28%, 95%);
     --lightBlue: #00bfff;
     --darkBlue: #0a0a11;
-    --offWhite: hsl(210, 28%, 75%);
-    ;
- }
-
-
+    --offWhite: hsl(210, 28%, 80%);
+}
 
 /* MAIN */
 
 html {
-    background-image: linear-gradient(black, #0a0a11 );
+    background-image: linear-gradient(black, var(--darkBlue));
     background-attachment: fixed;
-    font-size:larger;
+    font-size: larger;
     color: var(--white);
     margin: auto;
     line-height: 25px;
     max-width: 2000px;
-} 
-
-body {
-    animation-name: load;
-    animation-duration: 1s;
 }
 
- .title {
+body {
+    animation: load 1s;
+}
+
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
 
 main h1 {
-    background-color: var(--darkBlue);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--darkBlue), rgba(0, 0, 0, 0));
     padding: 25px;
     width: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
     text-align: center;
 }
 
 p {
-    text-align: center;
-    color: var(--white);
+    color: var(--offWhite);
 }
 
 a {
+    display: block;
     color: var(--white);
+    text-decoration: none;
+    padding: 15px;
+    border: 1px var(--white) solid;
+    margin: 15px;
+    text-align: center;
     border-radius: 25px;
     font-family: 'Courier New', Courier, monospace;
     min-width: 300px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s; /* Added transition for smooth hover effect */
 }
 
 a:hover {
+    border: 1px var(--red) solid;
     color: var(--red);
     background-color: #190005;
-    animation-name: hover;
-    animation-duration: .5s;
-    border: 1px var(--red) solid;
-
+    animation: hover 0.5s;
 }
 
 /* FLEX */
@@ -76,8 +77,12 @@ a:hover {
     width: 500px;
 }
 
- img {
-max-height: 400px;
+.flex p {
+    text-align: left;
+}
+
+img {
+    max-height: 400px;
 }
 
 ol {
@@ -86,18 +91,11 @@ ol {
     gap: 50px;
 }
 
-
-.flex p {
-    text-align: left;
-}
-
-
 /* FOOTER */
 
 #social-buttons {
     display: flex;
-flex-direction: row;    
-justify-content: space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -115,35 +113,12 @@ nav {
     justify-content: center;
 }
 
-
-a {
-    display: block;
-    color: var(--white);
-    text-decoration: none;
-    padding: 15px;
-    background-color: none;
-    border: 1px var(--white) solid;
-    color: var(--white);
-    margin: 15px;
-    text-align: center;
-    cursor: pointer;
-}
-
 /* ANIMATION */
 
 @keyframes hover {
-    0% {
-
-    }
-
     50% {
-            color: var(--red);
-            transform: scale(1.1);
-    }
-
-    100% {
         color: var(--red);
-        transform: scale(1.0);
+        transform: scale(1.1);
     }
 }
 
@@ -153,7 +128,6 @@ a {
         transform: translateY(-10px);
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
