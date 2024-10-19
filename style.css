@@ -68,7 +68,6 @@ a {
     width: 250px;
     cursor: pointer;
     transition: color 0.5s, background-color 0.5s;
-
 }
 
 
@@ -77,6 +76,28 @@ a:hover {
     color: var(--red);
     background-color: #190005;
     animation: hover 0.5s;
+}
+
+/* TABLE */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+
+    }
+    tr, td, th {
+        padding: 15px;
+    }
+
+    td {
+        font-family: monospace;
+        color: var(--offWhite);
+        font-size: larger;
+    }
+    .heading {
+    border-bottom: 1px var(--offWhite) solid;
+
 }
 
 /* FLEX */
@@ -98,6 +119,7 @@ a:hover {
 
 img {
     max-height: 400px;
+    max-width: 100%;
 }
 
 ol {
