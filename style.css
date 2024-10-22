@@ -33,7 +33,7 @@ main {
 }
 
 
-p, ul, ol a {
+p, ul, ol, a {
     color: var(--offWhite);
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
@@ -104,7 +104,7 @@ justify-content: center;
 }
 
 img {
-    height: 400px;
+    max-height: 400px;
     max-width: 100%;
 }
 
